@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/AlexandrKaleganov/patterns.svg?branch=main)](https://travis-ci.org/AlexandrKaleganov/patterns)
+[![codecov](https://codecov.io/gh/AlexandrKaleganov/patterns/branch/main/graph/badge.svg?token=TJJYCA6TQR)](https://codecov.io/gh/AlexandrKaleganov/patterns)
+
 # patterns
 Курс по паттернам проектирования
  GOF ПАТТЕРНЫ JAVA ОТ ДЖЕИМСА
