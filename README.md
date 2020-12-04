@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/AlexandrKaleganov/patterns.svg?branch=main)](https://travis-ci.org/AlexandrKaleganov/patterns)
 # patterns
 Курс по паттернам проектирования
  GOF ПАТТЕРНЫ JAVA ОТ ДЖЕИМСА
