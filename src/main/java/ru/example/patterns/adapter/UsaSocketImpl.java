@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component;
 
 /**
  * Class UsaSocketImpl
- * todo: описание
  *
  * @author Kaleganov Alexander
  * @since 06 дек. 20
