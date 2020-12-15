@@ -1,26 +1,17 @@
 # используем язык java. Travis CI поддерживает другие языки тоже.
 language: java
-dist: trusty
 jdk:
   - oraclejdk11
-addons:
-  apt:
-    packages:
-      - oracle-java11-installer
+# используем режим обычного пользователя для сборки проекта.
+sudo: false
 
-install:
-  - "mvn -N io.takari:maven:wrapper -Dmaven=${MAVEN_VERSION}"
-  - "./mvnw --show-version --errors --batch-mode test-compile dependency:go-offline"
-script: "./mvnw --show-version --errors --batch-mode -Prun-its clean verify"
 # после выполнения сборки запустить скрипт, который будет собирать статистику по JaCoCo
 # Здесь используется сторонни сервис https://codecov.io/
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 env:
   - CODECOV_TOKEN="9264fc49-7e36-478e-8930-7245d688220e"
-  - MAVEN_VERSION=3.2.5
-  - MAVEN_VERSION=3.3.9
-# Отправлять уведомление на почту youremail@smtp.ru (Изменить на свою) если сборка упала
+# Отправлять уведомление на почту alexmur07@mail.ru (Изменить на свою) если сборка упала
 notifications:
   email:
     recipients:
