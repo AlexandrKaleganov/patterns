@@ -13,6 +13,6 @@ class AdapterTest {
     public void testAdapter() {
         Radio radio = new Radio();
         Adapter adapter = new Adapter(new EuroSocketImpl());
-        assertEquals(radio.play(adapter), "d220");
+        assertEquals(radio.play(adapter), "220");
     }
 }

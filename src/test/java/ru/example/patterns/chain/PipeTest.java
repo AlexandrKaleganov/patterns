@@ -16,7 +16,7 @@ class PipeTest {
        Item item = new Item();
        item.setName("asdsad2asdasdas4");
        pipe.filter(item);
-       assertEquals(item.getName(), "asdsad3asdassssdas0" );
+       assertEquals(item.getName(), "asdsad3asdasdas4" );
     }
 }
 
