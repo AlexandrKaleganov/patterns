@@ -2,7 +2,8 @@ package ru.example.patterns.adapter;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.springframework.util.Assert;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @DisplayName("тестирование паттерна 'Адаптер'")
 class AdapterTest {
@@ -12,6 +13,6 @@ class AdapterTest {
     public void testAdapter() {
         Radio radio = new Radio();
         Adapter adapter = new Adapter(new EuroSocketImpl());
-        Assert.hasText(radio.play(adapter), "220");
+        assertEquals(radio.play(adapter), "d220");
     }
 }

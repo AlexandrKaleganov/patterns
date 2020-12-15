@@ -4,6 +4,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.util.Assert;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 @DisplayName("тестирование шаблона проектирования bridge (мост)")
 class TransportBikeTest {
 
@@ -11,6 +13,6 @@ class TransportBikeTest {
     public void testBridge() {
         Model model = new ModelNissan();
         Transport transport = new TransportBike(model);
-        Assert.hasText(transport.getType(), "мото nissan");
+        assertEquals(transport.getType(), "мото nissan");
     }
 }

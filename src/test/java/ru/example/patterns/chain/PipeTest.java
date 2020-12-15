@@ -3,7 +3,8 @@ package ru.example.patterns.chain;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.springframework.util.Assert;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Log4j2
 @DisplayName("тестирование паттерна chain of responsibility")
@@ -15,7 +16,7 @@ class PipeTest {
        Item item = new Item();
        item.setName("asdsad2asdasdas4");
        pipe.filter(item);
-       Assert.hasText(item.getName(), "asdsad3asdasdas0" );
+       assertEquals(item.getName(), "asdsad3asdassssdas0" );
     }
 }
 

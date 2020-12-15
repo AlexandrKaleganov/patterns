@@ -3,10 +3,8 @@ package ru.example.patterns.builder;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.springframework.util.Assert;
 
 import java.math.BigDecimal;
-import java.math.MathContext;
 
 import static org.junit.jupiter.api.Assertions.*;
 @DisplayName("тестирование паттерна builder")
@@ -21,7 +19,7 @@ class PersonBuilderImplTest {
                 .setSalary(new BigDecimal(1000))
                 .build();
         log.info(person);
-        Assert.hasText(person.getName(), "Вася");
+        assertEquals(person.getName(), "Вася");
     }
 
 }
