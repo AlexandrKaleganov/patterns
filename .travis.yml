@@ -10,7 +10,7 @@ jdk:
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 env:
-  - CODECOV_TOKEN="9264fc49-7e36-478e-8930-7245d688220e"
+#  - CODECOV_TOKEN="9264fc49-7e36-478e-8930-7245d688220e"
 # Отправлять уведомление на почту alexmur07@mail.ru (Изменить на свою) если сборка упала
 notifications:
   email:
