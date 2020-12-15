@@ -1,7 +1,5 @@
 # используем язык java. Travis CI поддерживает другие языки тоже.
 language: java
-sudo: true
-dist: trusty
 jdk:
   - oraclejdk11
 # после выполнения сборки запустить скрипт, который будет собирать статистику по JaCoCo
