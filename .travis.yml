@@ -3,12 +3,7 @@ language: java
 sudo: true
 dist: trusty
 jdk:
-  - oraclejdk8
   - oraclejdk11
-  - openjdk10
-  - openjdk11
-before_install:
-  - chmod +x mvnw
 # после выполнения сборки запустить скрипт, который будет собирать статистику по JaCoCo
 # Здесь используется сторонни сервис https://codecov.io/
 after_success:
