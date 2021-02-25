@@ -1,6 +1,6 @@
 package ru.example.patterns.decorator;
 
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 /**
  * Class CheesePizza
@@ -9,7 +9,7 @@ import lombok.AllArgsConstructor;
  * @author Kaleganov Alexander
  * @since 15 дек. 20
  */
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class CheesePizza implements Pizza{
     private final Pizza pizza;
 

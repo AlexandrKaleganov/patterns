@@ -1,6 +1,5 @@
 package ru.example.patterns.flyweight;
 
-import org.springframework.stereotype.Service;
 
 import java.util.WeakHashMap;
 

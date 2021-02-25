@@ -1,18 +1,22 @@
 package ru.example.patterns.composite;
 
-import lombok.AllArgsConstructor;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Objects;
+import java.util.Queue;
 
 /**
- * Class Folder
- * композиция
+ * Class Folder композиция
+ *
  * @author Kaleganov Alexander
  * @since 11 дек. 20
  */
 public class Folder {
+
     private final List<Folder> folders = new ArrayList<>();
     String name;
 
@@ -23,6 +27,7 @@ public class Folder {
     public void addFolder(Folder folder) {
         this.folders.add(folder);
     }
+
     public void addFolder(Folder... folders) {
         this.folders.addAll(Arrays.asList(folders));
     }
@@ -39,4 +44,5 @@ public class Folder {
         }
         return stringBuilder.toString();
     }
+
 }

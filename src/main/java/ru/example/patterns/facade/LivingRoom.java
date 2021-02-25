@@ -1,6 +1,6 @@
 package ru.example.patterns.facade;
 
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 /**
  * Class LivingRoom
@@ -8,7 +8,7 @@ import lombok.AllArgsConstructor;
  * @author Kaleganov Alexander
  * @since 15 дек. 20
  */
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class LivingRoom implements Room {
     private final FacadeRoom facadeRoom;
     public String camToRoom() {

@@ -1,6 +1,6 @@
 package ru.example.patterns.facade;
 
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 /**
  * Class FacadeRoom
@@ -9,7 +9,7 @@ import lombok.AllArgsConstructor;
  * @author Kaleganov Alexander
  * @since 15 дек. 20
  */
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class FacadeRoom {
     private final Light light;
     private final Tv tv;
