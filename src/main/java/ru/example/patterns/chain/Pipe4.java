@@ -13,7 +13,7 @@ public class Pipe4 extends Pipe {
     }
 
     @Override
-    void filter(Item item) {
+    void modify(Item item) {
         item.setName(item.getName().replace("4", "0"));
     }
 }
