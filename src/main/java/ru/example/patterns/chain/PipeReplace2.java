@@ -8,6 +8,7 @@ package ru.example.patterns.chain;
  * @since 07 дек. 20
  */
 public class PipeReplace2 extends Pipe {
+
     public PipeReplace2(Pipe pipe) {
         super(pipe);
     }
