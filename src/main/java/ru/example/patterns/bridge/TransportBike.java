@@ -13,7 +13,6 @@ public class TransportBike extends Transport {
     }
 
     @Override
-
     String getType() {
         return "мото " + super.getType();
     }
